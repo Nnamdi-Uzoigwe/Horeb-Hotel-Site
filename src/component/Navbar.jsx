@@ -36,7 +36,7 @@ const closeMenu = () => {
                 <ul className='hidden lg:flex gap-14 cursor-pointer  font-semibold'>
                     <li className='hover:text-[#7C6A46] active:text-[#7C6A46]'> <Link to='/'>Home</Link> </li>
                     {/* <li className='hover:text-[#7C6A46] active:text-[#7C6A46]'><Link to='/explore'>Explore</Link></li> */}
-                    <li className='hover:text-[#7C6A46] active:text-[#7C6A46]'> <Link to='/rooms'>Rooms</Link> </li>
+                    <li className='hover:text-[#7C6A46] active:text-[#7C6A46]'> <Link to='/rooms'>Properties</Link> </li>
                     <li className='hover:text-[#7C6A46] active:text-[#7C6A46]'> <Link to='/about'>About Us</Link></li>
                     <li className='hover:text-[#7C6A46] active:text-[#7C6A46]'><Link to='/contact'>Contact</Link></li>
                 </ul>
@@ -56,7 +56,7 @@ const closeMenu = () => {
             <ul className='flex flex-col items-center fixed gap-14 cursor-pointer bg-white w-screen h-screen z-50 font-semibold'>
                 <li className='hover:text-[#7C6A46]'><Link to='/'>Home</Link></li>
                 {/* <li className='hover:text-[#7C6A46]'><Link to='/explore'>Explore</Link></li> */}
-                <li className='hover:text-[#7C6A46]'><Link to='/rooms'>Rooms</Link></li>
+                <li className='hover:text-[#7C6A46]'><Link to='/rooms'>Properties</Link></li>
                 <li className='hover:text-[#7C6A46]'><Link to='/about'>About Us</Link></li>
                 <li className='hover:text-[#7C6A46]'><Link to='/contact'>Contact</Link></li>
                 <li className='bg-[#7C6A46] text-white w-[150px] h-[45px] text-center rounded-md flex items-center justify-center'>Check Out</li>

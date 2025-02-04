@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import pic from '../image/room2.jpg'
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import {roomlay1} from '../component/Array'
+import { FaGreaterThan, FaLessThan } from "react-icons/fa6";
+
 
 function RoomDetail() {
+    const [count, setCount] = useState(0)
 
     const {userId} = useParams();
     const room1 = roomlay1.find((room) => room.id === parseInt(userId));
@@ -30,7 +33,10 @@ function RoomDetail() {
             <div className='flex flex-col bg-white w-[90%] lg:w-[60%]  p-4 shadow-xl'>
                 <div><p className='text-center text-[24px] font-bold'>Luxury {room1.type}</p></div>
                 <hr />
-                <div><img src={room1.image[0]} alt="" className='w-[100%] lg:h-[450px]  py-2'/></div>
+                <div className='relative'><img src={room1.image[count]} alt="" className='w-[100%] lg:h-[450px]  py-2'/>
+                <div className='absolute top-[50%] left-[1vw] shadow-lg bg-white p-4 rounded-full cursor-pointer' onClick={() => setCount(prev => (prev - 1 + room1.image.length) % room1.image.length)}> <FaLessThan/></div>
+                <div className='absolute top-[50%] right-[1vw] shadow-lg bg-white p-4 rounded-full cursor-pointer' onClick={() => setCount(prev => (prev + 1) % room1.image.length)}> <FaGreaterThan/></div>
+                </div>
                 <hr />
                 <div className='py-4'>
                     <p className='font-semibold text-gray-400 text-[16px]'>Description</p>

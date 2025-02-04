@@ -13,7 +13,8 @@ function Luxury() {
             image: "https://img-v2.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Ftpfamgajn9w7me6ah99a7xt511i215&option=N&h=472&permitphotoenlargement=false",
             text:'Seongsu-dong Seoul Si, South Korea',
             number: 6,
-            price: "$17,696,564"
+            price: "$17,696,564",
+            info : ""
             
         },
         {
@@ -21,14 +22,16 @@ function Luxury() {
             image: "https://img-v2.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Fhdj2h8t2qvw145aymn4g9c9911i215&option=N&h=472&permitphotoenlargement=false",
             text:'Cheongdam-dong, Gangnam-gu Seoul Si, South Korea',
             number: 4,
-            price: "$15,090,094"
+            price: "$15,090,094",
+            info: ""
         },
         {
             id: 3,
             image: "https://img-v2.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2F3zj3b1m2gjqg45yd9gd2s278h4i215&option=N&h=472&permitphotoenlargement=false",
             text:'Cheongdam-dong, Gangnam-gu Seoul Si, South Korea',
             number: 5,
-            price: "$13,776,570"
+            price: "$13,776,570",
+            info: "Purchased by Mr&Mrs Park Jimin, Outstanding balance cost $200,000.00, contact support to clear off payment."
         },
     ]
     
@@ -46,7 +49,7 @@ function Luxury() {
            <div className='flex flex-col lg:flex-row justify-between w-full items-center lg:items-start gap-5 lg:gap-0'>
            {
                     rooms.map(room => (
-                        <Link to={'/rooms'}> 
+                        <Link to={`/rooms/rooms/${room.id}`}> 
                         
                             <div key={room.id} className='bg-white w-[98%] lg:w-[400px] p-4 relative rounded-lg hover:text-[#7C6A46]  '>
                                 <p className='bg-[#7C6A46] text-white w-fit text-[11px] font-bold p-2 rounded-md absolute right-5 top-6 '>{room.number} Rooms Available</p>
@@ -59,7 +62,7 @@ function Luxury() {
                                     <li>3,595 sq ft</li>
 
                                 </ul>
-                                <p className='pt-2 italic font-bold text-[14px]'>Purchased by Mr&Mrs Keanu-Reeves Joan-Victoria Cruze, Outstanding balance cost $200,000.00, contact support to clear off payment.</p>
+                                <p className='pt-2 italic font-bold text-[14px]'>{room.info}</p>
                                 <p className=' italic pt-2'>Marketed By Korea Sotheby's International Realty</p>
                             </div>
                         </Link>

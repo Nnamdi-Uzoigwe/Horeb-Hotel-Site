@@ -10,8 +10,8 @@ class Maps extends Component{
              style = {{width: "100%", height: "70%"}}
              initialCenter={
                 {
-                    lat: 6.169735,
-                    lng: 6.722589
+                    lat: 37.5172,
+                    lng: 127.0473
                 }
              }
              >

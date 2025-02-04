@@ -12,8 +12,8 @@ function Hero() {
                 <p className='text-[45px] lg:text-[50px] text-[#7C6A46]' id='herotitle1'>Paradise View</p> 
                 
              </div>   
-            <div className=' w-[100%] flex items-center lg:text-start text-center'><p className='text-[40px] lg:text-[55px] font-bold lg:w-[401px] w-[100%] leading-tight lg:leading-snug' id='herotitle2'>Hotel for every moment rich in emotion</p> </div>
-            <div><p className='text-[15px] font-medium w-[226px] text-center lg:text-start' id='herotitle3' >Every moment feels like the first time in paradise view</p> </div>
+            <div className=' w-[100%] flex items-center lg:text-start text-center'><p className='text-[40px] lg:text-[55px] font-bold lg:w-[401px] w-[100%] leading-tight lg:leading-snug' id='herotitle2'>Find Your Dream Home</p> </div>
+            <div><p className='text-[15px] font-medium w-[226px] text-center lg:text-start' id='herotitle3' >From as low as $10 per day with limited time offer discounts.</p> </div>
             <div className='flex gap-10 lg:gap-10 '>
                 <div><button className='bg-[#7C6A46] text-white  w-[100px] h-[35px] lg:w-[150px] lg:h-[50px] rounded-[50px]  lg:font-medium '>Book Now</button> </div>
                 <div className='flex items-center gap-2 lg:gap-4'>

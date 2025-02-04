@@ -9,7 +9,7 @@ import Testimonial from '../component/Testimonial'
 
 function Home() {
   return (
-    <div className=''>
+    <div className='overflow-x-hidden'>
         <Navbar/>
         <Hero />
         <Facilities/>

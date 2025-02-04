@@ -16,15 +16,10 @@ const tools = [
     {
         id: 2,
         icons: FaWifi,
-        title: 'Wifi'
+        title: 'Internet'
 
     },
-    {
-        id: 3,
-        icons: GiChickenOven,
-        title: 'Break Fast'
-
-    },
+   
     {
         id: 4,
         icons: FaDumbbell,
@@ -37,12 +32,7 @@ const tools = [
         title: 'Game Center'
 
     },
-    {
-        id: 6,
-        icons: HiLightBulb,
-        title: '24/7 Light'
-
-    },
+   
     {
         id: 7,
         icons: MdLocalLaundryService,
@@ -62,7 +52,7 @@ function Facilities() {
     <div className='font-poppins flex flex-col items-center pt-16 pb-16 pr-4 pl-4  lg:pr-20 lg:pl-20 gap-20 w-screen'>
         <div className='flex flex-col items-center'>
             <p className='text-[30px] lg:text-[40px] font-medium '>Our Facilities</p>
-            <p className='text-[10px] lg:text-[15px] font-medium'>We offer modern (5 star) hotel facilities for your comfort.</p>
+            <p className='text-[10px] lg:text-[15px] font-medium'>We offer modern Home facilities for your comfort.</p>
         </div>
         
         <div>

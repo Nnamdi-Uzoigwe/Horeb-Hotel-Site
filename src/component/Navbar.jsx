@@ -35,7 +35,7 @@ const closeMenu = () => {
             <div>
                 <ul className='hidden lg:flex gap-14 cursor-pointer  font-semibold'>
                     <li className='hover:text-[#7C6A46] active:text-[#7C6A46]'> <Link to='/'>Home</Link> </li>
-                    <li className='hover:text-[#7C6A46] active:text-[#7C6A46]'><Link to='/explore'>Explore</Link></li>
+                    {/* <li className='hover:text-[#7C6A46] active:text-[#7C6A46]'><Link to='/explore'>Explore</Link></li> */}
                     <li className='hover:text-[#7C6A46] active:text-[#7C6A46]'> <Link to='/rooms'>Rooms</Link> </li>
                     <li className='hover:text-[#7C6A46] active:text-[#7C6A46]'> <Link to='/about'>About Us</Link></li>
                     <li className='hover:text-[#7C6A46] active:text-[#7C6A46]'><Link to='/contact'>Contact</Link></li>
@@ -43,7 +43,7 @@ const closeMenu = () => {
             </div>
 
             <div>
-                <button className='bg-[#7C6A46] text-white w-[150px] h-[45px] rounded-md hidden lg:block'>Book Now</button>
+                <button className='bg-[#7C6A46] text-white w-[150px] h-[45px] rounded-md hidden lg:block'>Check Out</button>
             </div>
             <div ref={menu} className='lg:hidden flex'>
             <AiOutlineMenuFold  onClick={openMenu} size={30} className='flex  text-[#7C6A46]'/>
@@ -55,11 +55,11 @@ const closeMenu = () => {
         <div ref={link} className='w-screen justify-center bg-white h-screen fixed z-50 hidden mt-20'>
             <ul className='flex flex-col items-center fixed gap-14 cursor-pointer bg-white w-screen h-screen z-50 font-semibold'>
                 <li className='hover:text-[#7C6A46]'><Link to='/'>Home</Link></li>
-                <li className='hover:text-[#7C6A46]'><Link to='/explore'>Explore</Link></li>
+                {/* <li className='hover:text-[#7C6A46]'><Link to='/explore'>Explore</Link></li> */}
                 <li className='hover:text-[#7C6A46]'><Link to='/rooms'>Rooms</Link></li>
                 <li className='hover:text-[#7C6A46]'><Link to='/about'>About Us</Link></li>
                 <li className='hover:text-[#7C6A46]'><Link to='/contact'>Contact</Link></li>
-                <li className='bg-[#7C6A46] text-white w-[150px] h-[45px] text-center rounded-md flex items-center justify-center'>Book Now</li>
+                <li className='bg-[#7C6A46] text-white w-[150px] h-[45px] text-center rounded-md flex items-center justify-center'>Check Out</li>
             </ul>
             
         </div>

@@ -16,7 +16,7 @@
     font-family: 'Raleway', sans-serif;
   }
   .background-image-container {
-    background-image: url("../src/image/luxury-bg.jpg");
+    background-image: url("https://findsmarthouses.com/images/property/pc3.jpg");
   background-size: cover; /* Adjust as needed */
   background-position: center; /* Adjust as needed */
   width: 100%;
@@ -32,21 +32,21 @@
 
   }
   #roomHero{
-    background-image: url("../src/image/video.jpg");
+    background-image: url("https://findsmarthouses.com/images/property/pc3.jpg");
     background-size: cover; /* Adjust as needed */
     background-position: center; /* Adjust as needed */
     width: 100%;
     height: fit-content; /* Set a specific height */
   }
   #aboutHero{
-    background-image: url("../src/image/video.jpg");
+    background-image: url("https://findsmarthouses.com/images/property/pc3.jpg");
     background-size: cover; /* Adjust as needed */
     background-position: center; /* Adjust as needed */
     width: 100%;
     height: fit-content; /* Set a specific height */
   }
   #roomhero{
-    background-image: url("../src/image/video.jpg");
+    background-image: url("https://findsmarthouses.com/images/property/pc3.jpg");
     background-size: cover; /* Adjust as needed */
     background-position: center; /* Adjust as needed */
     width: 100vw;

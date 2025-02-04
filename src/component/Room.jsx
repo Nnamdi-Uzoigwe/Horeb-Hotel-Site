@@ -2,95 +2,55 @@ import React, {useRef} from 'react';
 import roompic from '../image/room3.jpg'
 import {PiTelevisionSimple, PiShower, PiWifiHighLight} from 'react-icons/pi'
 import { Link } from 'react-router-dom';
+import {roomlay1} from "./Array"
+import { IoLocationOutline } from "react-icons/io5";
+import { RxDotFilled } from "react-icons/rx";
+
+
 
 function Room() {
 
-    const roomlay1 = [
-        {
-            id: 1,
-            image: roompic,
-            type: 'The All Room',
-            price: '$190,000',
-            link: 'rooms/1',
-        },
-        {
-            id: 2,
-            image: roompic,
-            type: 'The All Room',
-            price: '$190,000',
-            link: 'rooms/2',
-        },
-        {
-            id: 3,
-            image: roompic,
-            type: 'The All Room',
-            price: '$190,000',
-            link: 'rooms/3',
-        },
-        {
-            id: 4,
-            image: roompic,
-            type: 'The All Room',
-            price: '$190,000',
-            link: 'rooms/4',
-        },
-        {
-            id: 5,
-            image: roompic,
-            type: 'The All Room',
-            price: '$190,000',
-            link: 'rooms/5',
-        },
-        {
-            id: 6,
-            image: roompic,
-            type: 'The All Room',
-            price: '$190,000',
-            link: 'rooms/6',
-        },
-        
-    ];
-
+    
     const roomlay2 = [
         {
             id: 7,
             image: roompic,
-            type: 'The Quest Room',
+            locate: 'The Quest Room',
             price: '$190,000',
             link: 'rooms/7',
         },
         {
             id: 8,
             image: roompic,
-            type: 'The Quest Room',
+            locate: 'The Quest Room',
             price: '$190,000',
             link: 'rooms/8',
         },
         {
             id: 9,
             image: roompic,
-            type: 'The Quest Room',
+            locate: 'The Quest Room',
             price: '$190,000',
             link: 'rooms/9',
         },
         {
             id: 10,
             image: roompic,
-            type: 'The Quest Room',
+            locate: 'The Quest Room',
             price: '$190,000',
             link: 'rooms/10',
         },
         {
             id: 11,
             image: roompic,
-            type: 'The Quest Room',
+            locate: 'The Quest Room',
             price: '$190,000',
             link: 'rooms/11',
         },
         {
             id: 12,
             image: roompic,
-            type: 'The Quest Room',
+            locate: 'The Quest Room',
             price: '$190,000',
             link: 'rooms/12',
         },
@@ -285,30 +245,41 @@ function Room() {
         <hr />
         <div className='flex items-center justify-evenly text-[20px] font-bold text-gray-400'>
             <div><button ref={all} onClick={allclick} className='text-[#7C6A46] py-4 lg:w-[250px] border-b-[4px]  border-[#7C6A46]'>All</button></div>
-            <div><button ref={quest} onClick={questclick} className='hover:text-[#7C6A46] py-4 lg:w-[250px]  border-[#7C6A46]'>Quest Rooms</button></div>
+            {/* <div><button ref={quest} onClick={questclick} className='hover:text-[#7C6A46] py-4 lg:w-[250px]  border-[#7C6A46]'>Quest Rooms</button></div>
             <div><button ref={suite} onClick={suiteclick} className='hover:text-[#7C6A46] py-4 lg:w-[250px]  border-[#7C6A46]'>Suites</button></div>
-            <div><button ref={exec} onClick={execclick} className='hover:text-[#7C6A46] py-4 lg:w-[250px]  border-[#7C6A46]'>Executive</button></div>
+            <div><button ref={exec} onClick={execclick} className='hover:text-[#7C6A46] py-4 lg:w-[250px]  border-[#7C6A46]'>Executive</button></div> */}
         </div>
         <hr />
 
 
         <div ref={all1} className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 px-5  lg:px-20 gap-16'>
             {roomlay1.map(room =>(
+                <Link to={`rooms/${room.id}`}>
                 <div key={room.id} className='w-fit h-fit bg-white shadow-xl text-[#7C6A46]  '>
                 <div>
-                    <img src={room.image} alt="roompic"  className='w-[410px]'/>
+                    <img src={room.image[0]} alt="roompic"  className='w-[410px]'/>
                 </div>
                 <div className='flex justify-between p-2'>
-                    <p className='text-[20px] font-semibold'>{room.type}</p>
-                    <p>Available: Yes</p>
+                    <p className='text-[20px] font-semibold'>Luxury {room.type}</p>
+                    <p className={` text-white px-2 flex items-center italic rounded-lg ${room.status === "Pending" && "bg-yellow-500"  } ${room.status === "For Sale" && "bg-green-500"  } ${room.status === "On Hold" && "bg-red-500"  }`}> {room.status}</p>
                 </div>
+                <span className='flex items-center gap-1 px-2'>
+                    <IoLocationOutline />
+                    <p className='text-[14px]'>{room.locate}</p>
+                </span>
+                <span className='flex items-center gap-1 px-2 text-[14px]'>
+                    <p> {room.rooms} Bedrooms</p>
+                    <RxDotFilled />
+                    <p>{room.interior}</p>
+                </span>
                 <div className='p-2'>
                     <p className='text-[15px] font-semibold'>{room.price} </p>
                 </div>
                 <hr />
                 <div className='flex justify-between p-2 items-center'>
-                    <div className='flex gap-2'>
-                        <div className='w-fit h-fit bg-[whitesmoke] p-2 rounded-full'>
+                    <div className=' w-[70%]'>
+                    <p className='pt-2 italic font-bold text-[14px]'>{room.note}</p>
+                        {/* <div className='w-fit h-fit bg-[whitesmoke] p-2 rounded-full'>
                             <PiTelevisionSimple size={25}/>
                         </div>
                         <div className='w-fit h-fit bg-[whitesmoke] p-2 rounded-full'>
@@ -316,13 +287,14 @@ function Room() {
                         </div>
                         <div className='w-fit h-fit bg-[whitesmoke] p-2 rounded-full'>
                             <PiWifiHighLight size={25}/>
-                        </div>
+                        </div> */}
                     </div>
                     <div>
-                      <Link to={room.link}><button className='bg-[#7C6A46] px-6 py-2 text-white'>Book Now</button></Link>  
+                      <Link to={`rooms/${room.id}`}><button className='bg-[#7C6A46] px-6 py-2 text-white text-[14px]'>Check Out</button></Link>  
                     </div>
                 </div>
             </div>
+                </Link>
             ))}
         </div>
 

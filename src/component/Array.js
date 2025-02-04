@@ -67,7 +67,7 @@ export const roomlay1 = [
         bath: "4 Full",
         interior: "5,920 sq Ft.",
         type: "Apartment",
-        note: "Purchased by Mr&Mrs Keanu-Reeves Joan-Victoria Cruze, Outstanding balance cost $200,000.00, contact support to clear off payment.",
+        note: "Purchased by Mr&Mrs Park Jimin, Outstanding balance cost $200,000.00, contact support to clear off payment.",
         status: "On Hold",
         style: "Penthouse",
         description: "Located near the Han River in the prestigious Cheongdam-dong area, PH129 defines the pinnacle of luxury living. Residents enjoy close proximity to renowned high-end shopping destinations, featuring brands like Chanel and Louis Vuitton, as well as cultural landmarks such as the Galleria and Hyundai Department Store. This prime location ensures that every essential and indulgence is within easy reach, enhancing the exclusivity and convenience of life at PH129. Designed as an elite community, PH129 offers luxurious amenities, providing residents with an unparalleled lifestyle defined by comfort, sophistication, and refinement."

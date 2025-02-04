@@ -12,7 +12,7 @@ function Luxury() {
             id: 1,
             image: "https://img-v2.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Ftpfamgajn9w7me6ah99a7xt511i215&option=N&h=472&permitphotoenlargement=false",
             text:'Seongsu-dong Seoul Si, South Korea',
-            number: 6,
+            number: "Available",
             price: "$17,696,564",
             info : ""
             
@@ -21,7 +21,7 @@ function Luxury() {
             id: 2,
             image: "https://img-v2.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Fhdj2h8t2qvw145aymn4g9c9911i215&option=N&h=472&permitphotoenlargement=false",
             text:'Cheongdam-dong, Gangnam-gu Seoul Si, South Korea',
-            number: 4,
+            number: "Available",
             price: "$15,090,094",
             info: ""
         },
@@ -29,7 +29,7 @@ function Luxury() {
             id: 3,
             image: "https://img-v2.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2F3zj3b1m2gjqg45yd9gd2s278h4i215&option=N&h=472&permitphotoenlargement=false",
             text:'Cheongdam-dong, Gangnam-gu Seoul Si, South Korea',
-            number: 5,
+            number: "On Hold",
             price: "$13,776,570",
             info: "Purchased by Mr&Mrs Park Jimin, Outstanding balance cost $200,000.00, contact support to clear off payment."
         },
@@ -52,7 +52,7 @@ function Luxury() {
                         <Link to={`/rooms/rooms/${room.id}`}> 
                         
                             <div key={room.id} className='bg-white w-[98%] lg:w-[400px] p-4 relative rounded-lg hover:text-[#7C6A46]  '>
-                                <p className='bg-[#7C6A46] text-white w-fit text-[11px] font-bold p-2 rounded-md absolute right-5 top-6 '>{room.number} Rooms Available</p>
+                                <p className='bg-[#7C6A46] text-white w-fit text-[11px] font-bold p-2 rounded-md absolute right-5 top-6 '>{room.number} </p>
                                 <img src={room.image} alt="room" className='w-full h-[300px]' />
                                 <p className='text-[17px] w-full pt-2  '>{room.text}</p>
                                 <p className='font-bold pt-2 '> {room.price}</p>

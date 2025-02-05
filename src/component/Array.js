@@ -54,6 +54,30 @@ export const roomlay1 = [
     {
         id: 3,
         image: [
+            "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Fm27xdd28yt5fmee2a3hmm6fys3i215&w=1920&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png",
+            "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2F86jb2em8ae8emaewfsg97dytz4i215&w=1920&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png",
+            "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Fhrjrq6rqmz64m2pac5rv13v8s2i215&w=1200&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png",
+            "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Fp2gee7p6ggd74hpyj6hp8b4w75i215&w=1200&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png",
+            "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Fc0xhen8jmd4kmr2kqd07xca987i215&w=1200&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png",
+            "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Ftar3z2562zmrmvthx5t2kmjng4i215&w=1200&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png",
+            "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Fzfncjexdkkzemxebpc4rqahn61i215&w=1200&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png"
+        ],
+        locate:'Daejang-dong, Bundang-gu Seongnam Si, South Korea',
+        number: 5,
+        price: "$12,757,988",
+        rooms: 8,
+        bath: "6 Full",
+        interior: "0.34 Acre(s).",
+        type: "Single Family Homes ",
+        note: "Purchased by Mr&Mrs Park Jimin Lisa Philips, having an Outstanding balance cost of $50,000, contact support to clear off payment.",
+        status: "On Hold",
+        for: "For Sale",
+        style: "Modern",
+        description: "Located in Daejang-dong, Bundang, this ultra-luxury residence is situated within an exclusive residential area, offering exceptional privacy and a serene living environment. With excellent access to Bundang's city center and major transportation networks, it provides the perfect balance of quietude and convenience. The expansive lot and sophisticated design stand out, offering spacious living areas ideal for large families or versatile use. This residence is the perfect choice for those seeking both privacy and accessibility in a premium location."
+    },
+    {
+        id: 4,
+        image: [
             "https://img-v2.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2F3zj3b1m2gjqg45yd9gd2s278h4i215&option=N&h=472&permitphotoenlargement=false",
             "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2F3zj3b1m2gjqg45yd9gd2s278h4i215&w=1920&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png",
             "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2F92028jzd0wvrmmjyqewxn8ysv7i215&w=1920&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png",
@@ -77,7 +101,7 @@ export const roomlay1 = [
 
     },
     {
-        id: 4,
+        id: 5,
         image:[
             "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Fp7r7nkcs3gga4hezwsyysb39v7i215&w=1920&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png",
             "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Fcs9eyxve31kk4fazgwknhqtg53i215&w=1920&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png",
@@ -100,30 +124,7 @@ export const roomlay1 = [
         style: "Modern",
         description: "Located in Yongsan-gu’s prestigious UN Village, Paarc Hannam is renowned for its luxurious design and sweeping Han River views. This exclusive community combines modern architecture with traditional Korean elements, featuring light-filled, spacious interiors. Positioned near the upcoming Yongsan Park—Seoul’s answer to Central Park—Paarc Hannam offers residents urban convenience paired with natural beauty. With easy access to cultural venues like Shinhan Art Hall and the National Theater, Paarc Hannam stands as a top investment in one of Seoul’s most desirable neighborhoods."
     },
-    {
-        id: 5,
-        image: [
-            "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Fm27xdd28yt5fmee2a3hmm6fys3i215&w=1920&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png",
-            "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2F86jb2em8ae8emaewfsg97dytz4i215&w=1920&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png",
-            "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Fhrjrq6rqmz64m2pac5rv13v8s2i215&w=1200&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png",
-            "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Fp2gee7p6ggd74hpyj6hp8b4w75i215&w=1200&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png",
-            "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Fc0xhen8jmd4kmr2kqd07xca987i215&w=1200&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png",
-            "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Ftar3z2562zmrmvthx5t2kmjng4i215&w=1200&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png",
-            "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Fzfncjexdkkzemxebpc4rqahn61i215&w=1200&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png"
-        ],
-        locate:'Daejang-dong, Bundang-gu Seongnam Si, South Korea',
-        number: 5,
-        price: "$12,757,988",
-        rooms: 8,
-        bath: "6 Full",
-        interior: "0.34 Acre(s).",
-        type: "Single Family Homes ",
-        note: "Purchased by Mr&Mrs Park Jimin Lisa Philips, having an Outstanding balance cost of $50,000, contact support to clear off payment.",
-        status: "On Hold",
-        for: "For Sale",
-        style: "Modern",
-        description: "Located in Daejang-dong, Bundang, this ultra-luxury residence is situated within an exclusive residential area, offering exceptional privacy and a serene living environment. With excellent access to Bundang's city center and major transportation networks, it provides the perfect balance of quietude and convenience. The expansive lot and sophisticated design stand out, offering spacious living areas ideal for large families or versatile use. This residence is the perfect choice for those seeking both privacy and accessibility in a premium location."
-    },
+    
 
     {
         id: 6,

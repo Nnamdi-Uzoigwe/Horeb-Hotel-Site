@@ -3,6 +3,9 @@ import room1 from '../image/room1.jpg'
 import room2 from '../image/room2.jpg'
 import room3 from '../image/room3.jpg'
 import { Link } from 'react-router-dom'
+import { roomlay1 } from './Array'
+import { IoLocationOutline } from 'react-icons/io5'
+import { RxDotFilled } from 'react-icons/rx'
 
 
 function Luxury() {
@@ -46,29 +49,51 @@ function Luxury() {
                 <p className=' text-sm lg:text-inherit'>Handpicked properties by our team.</p>
             </div>
             
-           <div className='flex flex-col lg:flex-row justify-between w-full items-center lg:items-start gap-5 lg:gap-0'>
-           {
-                    rooms.map(room => (
-                        <Link to={`/rooms/rooms/${room.id}`}> 
-                        
-                            <div key={room.id} className='bg-white w-[98%] lg:w-[400px] p-4 relative rounded-lg hover:text-[#7C6A46]  '>
-                                <p className='bg-[#7C6A46] text-white w-fit text-[11px] font-bold p-2 rounded-md absolute right-5 top-6 '>For Sale </p>
-                                <p className={` text-white w-fit text-[11px] font-bold p-2 rounded-md absolute left-5 top-6 ${room.number === "Available"? "bg-green-500": "bg-red-500"} `}>{room.number} </p>
-                                <img src={room.image} alt="room" className='w-full h-[300px]' />
-                                <p className='text-[17px] w-full pt-2  '>{room.text}</p>
-                                <p className='font-bold pt-2 '> {room.price}</p>
-                                <ul className='flex flex-col lg:flex-row  list-disc list-inside gap-2 pt-2 text-[14px]'>
-                                    <li >5 Bedrooms</li>
-                                    <li>5 bathroom</li>
-                                    <li>3,595 sq ft</li>
+           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 px-5  lg:px-20 gap-16'>
 
-                                </ul>
-                                <p className='pt-2 italic font-bold text-[14px] text-red-500'>{room.info}</p>
-                                <p className=' italic pt-2'>Marketed By Korea Sotheby's International Realty</p>
-                            </div>
-                        </Link>
-                    ))
-                }
+                       {roomlay1.map(room =>(
+                           <Link to={`rooms/rooms/${room.id}`}>
+                           <div key={room.id} className='w-fit h-fit bg-white shadow-xl text-[#7C6A46]  '>
+                           <div>
+                               <img src={room.image[0]} alt="roompic"  className='w-[410px]'/>
+                           </div>
+                           <div className='flex justify-between p-2'>
+                               <p className='text-[20px] font-semibold'>Luxury {room.type}</p>
+                               <p className={` text-white px-2 flex items-center italic rounded-lg bg-[#7C6A46]`}>{room.for}</p>
+                           </div>
+                           <span className='flex items-center gap-1 px-2'>
+                               <IoLocationOutline />
+                               <p className='text-[14px]'>{room.locate}</p>
+                           </span>
+                           <span className='flex items-center gap-1 px-2 text-[14px]'>
+                               <p> {room.rooms} Bedrooms</p>
+                               <RxDotFilled />
+                               <p>{room.interior}</p>
+                           </span>
+                           <div className='p-2'>
+                               <p className='text-[15px] font-semibold'>{room.price} </p>
+                           </div>
+                           <hr />
+                           <div className='flex justify-between p-2 items-center'>
+                               <div className=' w-[70%]'>
+                               <p className='pt-2 italic font-bold text-[12px] text-red-500'>{room.note}</p>
+                                   {/* <div className='w-fit h-fit bg-[whitesmoke] p-2 rounded-full'>
+                                       <PiTelevisionSimple size={25}/>
+                                   </div>
+                                   <div className='w-fit h-fit bg-[whitesmoke] p-2 rounded-full'>
+                                       <PiShower size={25} />
+                                   </div>
+                                   <div className='w-fit h-fit bg-[whitesmoke] p-2 rounded-full'>
+                                       <PiWifiHighLight size={25}/>
+                                   </div> */}
+                               </div>
+                               <div>
+                                 <Link to={`rooms/${room.id}`}><button className={` px-6 py-2 text-white text-[14px] ${room.status === "Pending" && "bg-yellow-500"  } ${room.status === "Available" && "bg-green-500"  } ${room.status === "On Hold" && "bg-red-500"  } `}>{room.status}</button></Link>  
+                               </div>
+                           </div>
+                       </div>
+                           </Link>
+                       ))}
            </div>
                
             

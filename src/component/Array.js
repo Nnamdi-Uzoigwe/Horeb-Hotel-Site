@@ -18,7 +18,8 @@ export const roomlay1 = [
         interior: "3,595 sq Ft.",
         type: "Apartment",
         note: "",
-        status: "For Sale",
+        status: "Available",
+        for: "For Sale",
         style: "Modern House",
         description: "Acro Seoul Forest combines cutting-edge design with exceptional comfort, featuring earthquake-resistant construction capable of withstanding seismic activity up to magnitude 6.0. Its column-supported structure allows residents to customize their interior layouts, while thick concrete slabs and floor cushioning ensure superior soundproofing between floors. The sleek grid-pattern exterior complements the building’s architectural elegance, offering unobstructed views of the Han River and Seoul Forest through its three-sided open structure.This smart home integrates seamlessly with Samsung’s SmartThings system for advanced convenience and boasts robust security with controlled access points for peace of mind. Residents enjoy exclusive amenities such as a gym, café, guesthouse, sauna, and golf facilities. Practical features like food waste disposal, air curtains, and recycling stations further enhance daily living, making Acro Seoul Forest a perfect blend of luxury, innovation, and functionality."
 
@@ -42,8 +43,9 @@ export const roomlay1 = [
         bath: "5 Full",
         interior: "7,394 sq Ft.",
         type: "Apartment",
-        note: "",
-        status: "For Sale",
+        note: "Under Renovation",
+        status: "Pending",
+        for: "For Rent",
         style: "Modern Home",
         description: "Located near the Han River in the prestigious Cheongdam-dong area, PH129 defines the pinnacle of luxury living. Residents enjoy close proximity to renowned high-end shopping destinations, featuring brands like Chanel and Louis Vuitton, as well as cultural landmarks such as the Galleria and Hyundai Department Store. This prime location ensures that every essential and indulgence is within easy reach, enhancing the exclusivity and convenience of life at PH129. Designed as an elite community, PH129 offers luxurious amenities, providing residents with an unparalleled lifestyle defined by comfort, sophistication, and refinement."
 
@@ -68,7 +70,8 @@ export const roomlay1 = [
         interior: "5,920 sq Ft.",
         type: "Apartment",
         note: "",
-        status: "For Sale",
+        for: "For Sale",
+        status: "Available",
         style: "Penthouse",
         description: "Located near the Han River in the prestigious Cheongdam-dong area, PH129 defines the pinnacle of luxury living. Residents enjoy close proximity to renowned high-end shopping destinations, featuring brands like Chanel and Louis Vuitton, as well as cultural landmarks such as the Galleria and Hyundai Department Store. This prime location ensures that every essential and indulgence is within easy reach, enhancing the exclusivity and convenience of life at PH129. Designed as an elite community, PH129 offers luxurious amenities, providing residents with an unparalleled lifestyle defined by comfort, sophistication, and refinement."
 
@@ -91,7 +94,8 @@ export const roomlay1 = [
         bath: "2 Full",
         interior: "5,920 sq Ft.",
         type: "Apartment",
-        note: "",
+        note: "Under Renovation",
+        for: "For Rent",
         status: "Pending",
         style: "Modern",
         description: "Located in Yongsan-gu’s prestigious UN Village, Paarc Hannam is renowned for its luxurious design and sweeping Han River views. This exclusive community combines modern architecture with traditional Korean elements, featuring light-filled, spacious interiors. Positioned near the upcoming Yongsan Park—Seoul’s answer to Central Park—Paarc Hannam offers residents urban convenience paired with natural beauty. With easy access to cultural venues like Shinhan Art Hall and the National Theater, Paarc Hannam stands as a top investment in one of Seoul’s most desirable neighborhoods."
@@ -116,6 +120,7 @@ export const roomlay1 = [
         type: "Single Family Homes ",
         note: "Purchased by Mr&Mrs Park Jimin Lisa Philips, having an Outstanding balance cost of $50,000, contact support to clear off payment.",
         status: "On Hold",
+        for: "For Sale",
         style: "Modern",
         description: "Located in Daejang-dong, Bundang, this ultra-luxury residence is situated within an exclusive residential area, offering exceptional privacy and a serene living environment. With excellent access to Bundang's city center and major transportation networks, it provides the perfect balance of quietude and convenience. The expansive lot and sophisticated design stand out, offering spacious living areas ideal for large families or versatile use. This residence is the perfect choice for those seeking both privacy and accessibility in a premium location."
     },
@@ -138,8 +143,9 @@ export const roomlay1 = [
         bath: "3 Full",
         interior: "3,519 Sq Ft.",
         type: "Apartments",
-        note: "Purchased by Mr&Mrs Park Jimin, Outstanding balance cost $200,000.00, contact support to clear off payment.",
-        status: "For Sale",
+        note: "",
+        for: "For Sale",
+        status: "Available",
         style: "Modern",
         description: "Nestled in Seocho-dong, Seocho The Mikelan offers unparalleled accessibility and safety. Positioned between Seocho and Banpo Stations on Line 2, it provides seamless connectivity to Seoul’s extensive transit network. Located near the legal district, the area ensures top-notch security, enhanced by regular police patrols, while Seoul High School across the street offers added convenience for families.Beyond its prime location, Seocho The Mikelan elevates urban living with proximity to cultural and lifestyle attractions. Residents can enjoy world-class performances at the Seoul Arts Center or relax in the cozy cafes of Seorae Village, making it the ultimate destination for a sophisticated and convenient lifestyle."
     },
@@ -161,7 +167,8 @@ export const roomlay1 = [
         interior: "7,394 Sq Ft.",
         type: "Apartments",
         note: "",
-        status: "For Sale",
+        status: "Available",
+        for: "For Rent",
         style: "Modern",
         description: "Located near the Han River in the prestigious Cheongdam-dong area, PH129 defines the pinnacle of luxury living. Residents enjoy close proximity to renowned high-end shopping destinations, featuring brands like Chanel and Louis Vuitton, as well as cultural landmarks such as the Galleria and Hyundai Department Store. This prime location ensures that every essential and indulgence is within easy reach, enhancing the exclusivity and convenience of life at PH129. Designed as an elite community, PH129 offers luxurious amenities, providing residents with an unparalleled lifestyle defined by comfort, sophistication, and refinement."
     },
@@ -184,7 +191,8 @@ export const roomlay1 = [
         interior: "1.15 Acre(s)",
         type: "Single Family Homes",
         note: "",
-        status: "For Sale",
+        status: "Available",
+        for: "For Sale",
         style: "Modern",
         description: "Located in Geumnam-ri, Hwado-eup, Namyangju, this large detached residence offers a spectacular view of the North Han River. Nestled in a serene natural setting with lush forests and clear skies, the property is ideal for a range of commercial uses, including a large café, gallery, outdoor wedding hall, luxury spa, or wine shop. Situated in a development-promoting district, the property holds significant future growth potential. This residence, offering a blend of natural tranquility and commercial potential, is the perfect choice for those seeking a luxurious and harmonious lifestyle."
     },

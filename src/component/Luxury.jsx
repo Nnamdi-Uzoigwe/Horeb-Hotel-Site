@@ -52,7 +52,8 @@ function Luxury() {
                         <Link to={`/rooms/rooms/${room.id}`}> 
                         
                             <div key={room.id} className='bg-white w-[98%] lg:w-[400px] p-4 relative rounded-lg hover:text-[#7C6A46]  '>
-                                <p className='bg-[#7C6A46] text-white w-fit text-[11px] font-bold p-2 rounded-md absolute right-5 top-6 '>{room.number} </p>
+                                <p className='bg-[#7C6A46] text-white w-fit text-[11px] font-bold p-2 rounded-md absolute right-5 top-6 '>For Sale </p>
+                                <p className={` text-white w-fit text-[11px] font-bold p-2 rounded-md absolute left-5 top-6 ${room.number === "Available"? "bg-green-500": "bg-red-500"} `}>{room.number} </p>
                                 <img src={room.image} alt="room" className='w-full h-[300px]' />
                                 <p className='text-[17px] w-full pt-2  '>{room.text}</p>
                                 <p className='font-bold pt-2 '> {room.price}</p>
@@ -62,7 +63,7 @@ function Luxury() {
                                     <li>3,595 sq ft</li>
 
                                 </ul>
-                                <p className='pt-2 italic font-bold text-[14px]'>{room.info}</p>
+                                <p className='pt-2 italic font-bold text-[14px] text-red-500'>{room.info}</p>
                                 <p className=' italic pt-2'>Marketed By Korea Sotheby's International Realty</p>
                             </div>
                         </Link>

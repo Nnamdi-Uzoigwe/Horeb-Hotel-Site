@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import pic from '../image/room2.jpg'
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
@@ -7,16 +7,47 @@ import { useParams } from 'react-router-dom'
 import {roomlay1} from '../component/Array'
 import { FaGreaterThan, FaLessThan } from "react-icons/fa6";
 import Testimonial from '../component/Testimonial'
+import { motion } from "framer-motion";
+
 
 
 function RoomDetail() {
     const [count, setCount] = useState(0)
+    const [direction, setDirection] = useState(1); // 1 for right, -1 for left
+
 
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
     const {userId} = useParams();
     const room1 = roomlay1.find((room) => room.id === parseInt(userId));
+
+    const handleNext = useCallback(() => {
+        setDirection(1); // Moving right
+        setCount(prev => (prev + 1) % room1.image.length);
+    }, [room1.image.length]);
+
+    const handlePrev = useCallback(() => {
+        setDirection(-1); // Moving left
+        setCount(prev => (prev - 1 + room1.image.length) % room1.image.length);
+    }, [room1.image.length]);
+
+
+    const slideVariants = {
+        enter: (direction) => ({
+            x: direction * 100, // Slide from left or right
+            opacity: 0,
+        }),
+        center: {
+            x: 0,
+            opacity: 1,
+            transition: { duration: 0.4, ease: "easeInOut" }
+        },
+        exit: (direction) => ({
+            x: direction * -100, // Exit to left or right
+            opacity: 0,
+        }),
+    };
 
 
     if (!room1) {
@@ -34,12 +65,25 @@ function RoomDetail() {
         </div> */}
         <div className='py-14 overflow-x-hidden  top-4 bottom-4  h-[45%] lg:h-[60%] md:h-[51%]   '>
         <div className='w-screen h-fit  flex items-center flex-col py-10'>
-            <div className='flex flex-col bg-white w-[90%] lg:w-[60%]  lg:p-4 shadow-xl'>
+            <div className='flex flex-col bg-white w-[90%] lg:w-[60%] overflow-x-hidden  lg:p-4 shadow-xl'>
                 <div><p className='text-center text-[24px] font-bold'>Luxury {room1.type}</p></div>
                 <hr />
-                <div className='relative'><img src={room1.image[count]} alt="" className='w-[100%] lg:h-[450px]  py-2'/>
-                <div className='absolute top-[50%] left-[1vw] shadow-lg bg-white p-4 rounded-full cursor-pointer' onClick={() => setCount(prev => (prev - 1 + room1.image.length) % room1.image.length)}> <FaLessThan/></div>
-                <div className='absolute top-[50%] right-[1vw] shadow-lg bg-white p-4 rounded-full cursor-pointer' onClick={() => setCount(prev => (prev + 1) % room1.image.length)}> <FaGreaterThan/></div>
+                <div className='relative '>
+                    {/* <img src={room1.image[count]} alt="" className='w-[100%] lg:h-[450px] transition-all duration-300 ease-in-out py-2'/> */}
+                <motion.img
+                key={count} // Forces re-render to trigger animation
+                src={room1?.image?.[count]}
+                alt=""
+                className="w-full lg:h-[450px] py-2 "
+                variants={slideVariants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                custom={direction} // Pass direction to variants
+            />
+                <div className='absolute top-[50%] left-[1vw] shadow-lg bg-white p-4 rounded-full cursor-pointer' onMouseDown={handlePrev}> <FaLessThan/></div>
+                <div className='absolute top-[50%] right-[1vw] shadow-lg bg-white p-4 rounded-full cursor-pointer' onMouseDown={handleNext}> <FaGreaterThan/></div>
+                <button className={` px-6 py-2 text-white text-[14px] bg-[#7C6A46]`}>{room1.for}</button>
                 </div>
                 <hr />
                 <div className='py-4'>

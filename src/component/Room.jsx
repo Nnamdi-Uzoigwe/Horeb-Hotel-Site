@@ -261,7 +261,7 @@ function Room() {
                 </div>
                 <div className='flex justify-between p-2'>
                     <p className='text-[20px] font-semibold'>Luxury {room.type}</p>
-                    <p className={` text-white px-2 flex items-center italic rounded-lg ${room.status === "Pending" && "bg-yellow-500"  } ${room.status === "For Sale" && "bg-green-500"  } ${room.status === "On Hold" && "bg-red-500"  }`}> {room.status}</p>
+                    <p className={` text-white px-2 flex items-center italic rounded-lg bg-[#7C6A46]`}>{room.for}</p>
                 </div>
                 <span className='flex items-center gap-1 px-2'>
                     <IoLocationOutline />
@@ -278,7 +278,7 @@ function Room() {
                 <hr />
                 <div className='flex justify-between p-2 items-center'>
                     <div className=' w-[70%]'>
-                    <p className='pt-2 italic font-bold text-[14px]'>{room.note}</p>
+                    <p className='pt-2 italic font-bold text-[12px] text-red-500'>{room.note}</p>
                         {/* <div className='w-fit h-fit bg-[whitesmoke] p-2 rounded-full'>
                             <PiTelevisionSimple size={25}/>
                         </div>
@@ -290,7 +290,7 @@ function Room() {
                         </div> */}
                     </div>
                     <div>
-                      <Link to={`rooms/${room.id}`}><button className='bg-[#7C6A46] px-6 py-2 text-white text-[14px]'>Check Out</button></Link>  
+                      <Link to={`rooms/${room.id}`}><button className={` px-6 py-2 text-white text-[14px] ${room.status === "Pending" && "bg-yellow-500"  } ${room.status === "Available" && "bg-green-500"  } ${room.status === "On Hold" && "bg-red-500"  } `}>{room.status}</button></Link>  
                     </div>
                 </div>
             </div>

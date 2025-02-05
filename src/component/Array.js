@@ -67,8 +67,8 @@ export const roomlay1 = [
         bath: "4 Full",
         interior: "5,920 sq Ft.",
         type: "Apartment",
-        note: "Purchased by Mr&Mrs Park Jimin, Outstanding balance cost $200,000.00, contact support to clear off payment.",
-        status: "On Hold",
+        note: "",
+        status: "For Sale",
         style: "Penthouse",
         description: "Located near the Han River in the prestigious Cheongdam-dong area, PH129 defines the pinnacle of luxury living. Residents enjoy close proximity to renowned high-end shopping destinations, featuring brands like Chanel and Louis Vuitton, as well as cultural landmarks such as the Galleria and Hyundai Department Store. This prime location ensures that every essential and indulgence is within easy reach, enhancing the exclusivity and convenience of life at PH129. Designed as an elite community, PH129 offers luxurious amenities, providing residents with an unparalleled lifestyle defined by comfort, sophistication, and refinement."
 
@@ -114,8 +114,8 @@ export const roomlay1 = [
         bath: "6 Full",
         interior: "0.34 Acre(s).",
         type: "Single Family Homes ",
-        note: "",
-        status: "For Sale",
+        note: "Purchased by Mr&Mrs Park Jimin Lisa Philips, having an Outstanding balance cost of $50,000, contact support to clear off payment.",
+        status: "On Hold",
         style: "Modern",
         description: "Located in Daejang-dong, Bundang, this ultra-luxury residence is situated within an exclusive residential area, offering exceptional privacy and a serene living environment. With excellent access to Bundang's city center and major transportation networks, it provides the perfect balance of quietude and convenience. The expansive lot and sophisticated design stand out, offering spacious living areas ideal for large families or versatile use. This residence is the perfect choice for those seeking both privacy and accessibility in a premium location."
     },
@@ -138,7 +138,7 @@ export const roomlay1 = [
         bath: "3 Full",
         interior: "3,519 Sq Ft.",
         type: "Apartments",
-        note: "",
+        note: "Purchased by Mr&Mrs Park Jimin, Outstanding balance cost $200,000.00, contact support to clear off payment.",
         status: "For Sale",
         style: "Modern",
         description: "Nestled in Seocho-dong, Seocho The Mikelan offers unparalleled accessibility and safety. Positioned between Seocho and Banpo Stations on Line 2, it provides seamless connectivity to Seoul’s extensive transit network. Located near the legal district, the area ensures top-notch security, enhanced by regular police patrols, while Seoul High School across the street offers added convenience for families.Beyond its prime location, Seocho The Mikelan elevates urban living with proximity to cultural and lifestyle attractions. Residents can enjoy world-class performances at the Seoul Arts Center or relax in the cozy cafes of Seorae Village, making it the ultimate destination for a sophisticated and convenient lifestyle."

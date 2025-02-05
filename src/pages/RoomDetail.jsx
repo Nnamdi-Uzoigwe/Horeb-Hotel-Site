@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import {roomlay1} from '../component/Array'
 import { FaGreaterThan, FaLessThan } from "react-icons/fa6";
+import Testimonial from '../component/Testimonial'
 
 
 function RoomDetail() {
@@ -33,7 +34,7 @@ function RoomDetail() {
         </div> */}
         <div className='py-14 overflow-x-hidden  top-4 bottom-4  h-[45%] lg:h-[60%] md:h-[51%]   '>
         <div className='w-screen h-fit  flex items-center flex-col py-10'>
-            <div className='flex flex-col bg-white w-[90%] lg:w-[60%]  p-4 shadow-xl'>
+            <div className='flex flex-col bg-white w-[90%] lg:w-[60%]  lg:p-4 shadow-xl'>
                 <div><p className='text-center text-[24px] font-bold'>Luxury {room1.type}</p></div>
                 <hr />
                 <div className='relative'><img src={room1.image[count]} alt="" className='w-[100%] lg:h-[450px]  py-2'/>
@@ -44,6 +45,15 @@ function RoomDetail() {
                 <div className='py-4'>
                     <p className='font-semibold text-gray-400 text-[16px]'>Description</p>
                     <p className='p-4'>{room1.description}
+                    </p>
+                    {/* <div className='flex items-center justify-center'>
+                       <Link to={'/payment'}>  <button className=' text-[16px] font-semibold text-white w-[250px] rounded-md py-2 bg-[#7C6A46]'>Book Now</button> </Link>
+                    </div> */}
+
+                </div>
+                <div className='py-4'>
+                    <p className='font-semibold text-gray-400 text-[16px]'>Remark</p>
+                    <p className='p-4'>{room1.note}
                     </p>
                     {/* <div className='flex items-center justify-center'>
                        <Link to={'/payment'}>  <button className=' text-[16px] font-semibold text-white w-[250px] rounded-md py-2 bg-[#7C6A46]'>Book Now</button> </Link>
@@ -85,6 +95,7 @@ function RoomDetail() {
             </div>
         </div>
     </div>
+    <Testimonial />
     <Footer/>
     </div>
     

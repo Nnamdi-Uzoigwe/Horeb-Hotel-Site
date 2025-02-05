@@ -26,12 +26,12 @@ function Luxury() {
             info: ""
         },
         {
-            id: 3,
-            image: "https://img-v2.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2F3zj3b1m2gjqg45yd9gd2s278h4i215&option=N&h=472&permitphotoenlargement=false",
-            text:'Cheongdam-dong, Gangnam-gu Seoul Si, South Korea',
+            id: 5,
+            image: "https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1103i215%2Fm27xdd28yt5fmee2a3hmm6fys3i215&w=1920&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://internal.sothebys-staging.gabriels.net/resources/siteresources/commonresources/images/nophoto/no_image_new.png",
+            text:'Daejang-dong, Bundang-gu Seongnam Si, South Korea',
             number: "On Hold",
             price: "$13,776,570",
-            info: "Purchased by Mr&Mrs Park Jimin, Outstanding balance cost $200,000.00, contact support to clear off payment."
+            info: "Purchased by Mr&Mrs Park Jimin Lisa Philips, having an Outstanding balance cost of $50,000, contact support to clear off payment."
         },
     ]
     

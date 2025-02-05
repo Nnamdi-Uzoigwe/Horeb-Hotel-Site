@@ -36,7 +36,7 @@ function Luxury() {
     ]
     
   return (
-    <div className='flex flex-col items-center gap-10 w-screen '>
+    <div className='flex flex-col items-center gap-10 w-screen pt-10 '>
         <div className="background-image-container">
      <div className='w-[100%] bg-[#7C6A46] bg-opacity-80 px-4'>
         <div className='lg:pr-20 lg:pl-20 pt-10 pb-10 flex flex-col items-center gap-12 w-full justify-center'>

@@ -15,8 +15,8 @@ function Home() {
     <div className='overflow-x-hidden'>
         <Navbar/>
         <Hero />
-        <Facilities/>
         <Luxury/>
+        <Facilities/>
         <Testimonial/>
         <Footer/>
     </div>

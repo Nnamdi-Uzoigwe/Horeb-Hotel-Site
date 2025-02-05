@@ -64,7 +64,7 @@ export const roomlay1 = [
         ],
         locate:'Daejang-dong, Bundang-gu Seongnam Si, South Korea',
         number: 5,
-        price: "$12,757,988",
+        price: "",
         rooms: 8,
         bath: "6 Full",
         interior: "0.34 Acre(s).",

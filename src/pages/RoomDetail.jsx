@@ -97,7 +97,7 @@ function RoomDetail() {
                 </div>
                 <div className='py-4'>
                     <p className='font-semibold text-gray-400 text-[16px]'>Remark</p>
-                    <p className='p-4'>{room1.note}
+                    <p className='p-4 text-red-500 italic font-bold'>{room1.note}
                     </p>
                     {/* <div className='flex items-center justify-center'>
                        <Link to={'/payment'}>  <button className=' text-[16px] font-semibold text-white w-[250px] rounded-md py-2 bg-[#7C6A46]'>Book Now</button> </Link>

@@ -49,7 +49,7 @@ function Luxury() {
                 <p className=' text-sm lg:text-inherit'>Handpicked properties by our team.</p>
             </div>
             
-           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 px-5  lg:px-20 gap-16'>
+           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 px-5  lg:px-20 gap-16 w-[100vw]'>
 
                        {roomlay1.map(room =>(
                            <Link to={`rooms/rooms/${room.id}`}>

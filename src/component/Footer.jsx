@@ -44,9 +44,9 @@ function Footer() {
               latest deals on our rooms and vacation
               discount.
           </p>
-          <form action="" className='bg-white w-[360px] h-fit p-2 rounded-md'>
+          {/* <form action="" className='bg-white w-[360px] h-fit p-2 rounded-md'>
             <input type="text" placeholder='Enter your Email' className='w-[190px] text-[13px] outline-none' /><button className='bg-[#7C6A46] w-[150px] h-[40px] text-white rounded-md '>Subscribe</button>
-          </form>
+          </form> */}
         </div>
       </div>
       <hr />

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import pic from '../image/room2.jpg'
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
@@ -11,6 +11,9 @@ import { FaGreaterThan, FaLessThan } from "react-icons/fa6";
 function RoomDetail() {
     const [count, setCount] = useState(0)
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     const {userId} = useParams();
     const room1 = roomlay1.find((room) => room.id === parseInt(userId));
 

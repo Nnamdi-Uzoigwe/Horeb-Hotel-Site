@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 import Hero from '../component/Hero'
@@ -8,6 +8,9 @@ import Testimonial from '../component/Testimonial'
 
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className='overflow-x-hidden'>
         <Navbar/>

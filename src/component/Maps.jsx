@@ -1,10 +1,10 @@
 import {React, Component} from 'react'
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react'
 
+const key = import.meta.env.VITE_API_KEY;
 
 class Maps extends Component{
   render() {
-      const key = import.meta.env.VITE_API_KEY;
   return (
     
             <Map google={this.props.google}
@@ -28,20 +28,6 @@ class Maps extends Component{
   }
 }
 
-           // <Map
-                //google = {this.props.google}
-              ////  style = {{width:"100%", height:"100%"}}
-               // zoom = {10}
-              //  initialCenter = {
-                 //   {
-                 ////       lat: 6.169735,
-                  //      lng: 6.722589
-                  //  }
-               // }
-          //  />
-
- // )
-//}
 
 export default GoogleApiWrapper ({
     apiKey:(key)

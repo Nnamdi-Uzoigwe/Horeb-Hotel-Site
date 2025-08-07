@@ -9,11 +9,11 @@ function Hero() {
         <div className='flex flex-col gap-6 lg:gap-7 items-center lg:items-start w-[100%] mt-32'>
             <div>
                 
-                <p className='text-[45px] text-center lg:text-left lg:text-[50px] text-[#7C6A46]' id='herotitle1'>Welcome to <span>Horeb Hotels & Associates!</span></p> 
+                <p className='text-[45px] text-center lg:text-left lg:text-[50px] text-[#7C6A46] font-semibold' id='herotitle1'>Welcome to <span>Horeb Hotels & Associates!</span></p> 
                 
              </div>   
             <div className=' w-[100%] flex items-center lg:text-start text-center'><p className='text-[40px] lg:text-[55px] font-bold lg:w-[401px] w-[100%] leading-tight lg:leading-snug' id='herotitle2'>Book A Nice Hotel</p> </div>
-            <div><p className='text-[15px] font-medium w-[226px] text-center lg:text-start' id='herotitle3' >From as low as ₦12,000 per day with limited time offer discounts.</p> </div>
+            <div><p className='text-[16px] font-medium w-[240px] text-center lg:text-start' id='herotitle3' >From as low as ₦12,000 per day with limited time offer discounts.</p> </div>
             <div className='flex gap-10 lg:gap-10 '>
                 <div><button className='bg-[#7C6A46] text-white  w-[100px] h-[35px] lg:w-[150px] lg:h-[50px] rounded-[50px]  lg:font-medium '>Book Now</button> </div>
                 <div className='flex items-center gap-2 lg:gap-4'>

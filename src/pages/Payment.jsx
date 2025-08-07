@@ -1,7 +1,6 @@
 
 import { useState } from 'react';
 import Footer from '../component/Footer';
-import logo from '../image/logo.svg';
 import { CiCreditCard1, CiCirclePlus, CiCircleMinus } from 'react-icons/ci';
 import { RiAccountBoxLine } from 'react-icons/ri';
 import masterlogo from '../image/mastercard.png';
@@ -106,11 +105,7 @@ function Payment() {
     };
 
     return (
-        <div className='overflow-x-hidden bg-gray-50'>
-            {/* Header */}
-            <div className='flex justify-between w-screen py-6 px-4 lg:px-20 items-center bg-white shadow-md'>
-                <img src={logo} alt="logo" className='h-10' />
-            </div>
+        <div className='overflow-x-hidden bg-gray-50 pt-[90px]'>
 
             {/* Payment Form */}
             <div className='container mx-auto p-4 md:p-12'>

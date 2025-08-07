@@ -1,7 +1,7 @@
 import {React, Component} from 'react'
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react'
 
-const key = import.meta.env.VITE_API_KEY;
+const key = process.env.REACT_APP_API_KEY;
 
 class Maps extends Component{
   render() {

@@ -16,26 +16,25 @@ function Aboutdetail() {
             <p className="font-bold text-[1.5rem]">Horeb Emmanuel</p>
             <p className="font-bold italic">Real Estate Professional</p>
           </div>
-          <p className="w-[100%] lg:w-[579px] text-[15px]">
-            Horeb Hotels and Associates is a premier real estate firm in South
-            Korea, dedicated to helping clients find exceptional properties that
-            match their lifestyle and investment goals. With years of expertise
-            in the real estate market, we specialize in luxury residences,
-            commercial spaces, and investment properties across the country’s
-            most sought-after locations. At Paradise View, we are committed to
-            delivering personalized services, market insights, and seamless
-            transactions. Our team of professionals works closely with buyers,
-            sellers, and investors to provide tailored solutions that meet their
-            unique needs. Whether you are looking for a dream home, a strategic
-            business location, or a high-value investment, we ensure a smooth
-            and rewarding experience. Guided by integrity, innovation, and
-            customer satisfaction, Paradise View continues to set new standards
-            in the South Korean real estate industry. Let us help you turn your
-            vision into reality.
+          <p className="w-[100%] lg:w-[579px] text-[15px] pb-6">
+            Horeb Hotels and Associates is a premier real estate firm in Calabar
+            Nigeria, dedicated to helping clients find hotels and properties
+            that match their lifestyle and investment goals. With years of
+            expertise in the real estate market, we specialize in luxury
+            residences, hotels, commercial spaces, and investment properties
+            across the country's most sought-after locations. At HH and
+            Associates, we are committed to delivering personalized services,
+            market insights, and seamless transactions. Our team of
+            professionals works closely with buyers, sellers, and investors to
+            provide tailored solutions that meet their unique needs. Whether you
+            are looking for a dream home, a strategic business location, or a
+            high-value investment, we ensure a smooth and rewarding experience.
+            Guided by integrity, innovation, and customer satisfaction, Paradise
+            View continues to set new standards in the Nigerian real estate
+            industry. Let us help you turn your vision into reality.
           </p>
         </div>
       </div>
-    
     </div>
   );
 }

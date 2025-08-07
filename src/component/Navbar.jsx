@@ -49,14 +49,12 @@ const closeMenu = () => {
                 <IoMdClose size={30} onClick={closeMenu} className='text-[#7C6A46] ' />
             </div>
         </div>
-        <div ref={link} className='w-screen justify-center bg-white h-screen fixed z-50 hidden mt-20'>
+        <div ref={link} className='w-screen justify-center bg-white h-screen fixed z-50 hidden mt-[74px]'>
             <ul className='flex flex-col items-center fixed gap-14 cursor-pointer bg-white w-screen h-screen z-50 font-semibold'>
-                <li className='hover:text-[#7C6A46]'><Link to='/'>Home</Link></li>
-                {/* <li className='hover:text-[#7C6A46]'><Link to='/explore'>Explore</Link></li> */}
-                <li className='hover:text-[#7C6A46]'><Link to='/rooms'>Properties</Link></li>
-                <li className='hover:text-[#7C6A46]'><Link to='/about'>About Us</Link></li>
-                <li className='hover:text-[#7C6A46]'><Link to='/contact'>Contact</Link></li>
-                <li className='bg-[#7C6A46] text-white w-[150px] h-[45px] text-center rounded-md flex items-center justify-center'>Check Out</li>
+                <li className='hover:text-[#7C6A46]'><Link to='/' onClick={closeMenu}>Home</Link></li>
+                <li className='hover:text-[#7C6A46]'><Link to='/about' onClick={closeMenu}>About Us</Link></li>
+                <li className='hover:text-[#7C6A46]'><Link to='/contact' onClick={closeMenu}>Contact</Link></li>
+                <li className='bg-[#7C6A46] text-white w-[150px] h-[45px] text-center rounded-md flex items-center justify-center' onClick={closeMenu}>Check Out</li>
             </ul>
             
         </div>

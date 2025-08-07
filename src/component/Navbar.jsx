@@ -1,5 +1,3 @@
-import React from 'react'
-import logo from '../image/logo.svg'
 import {AiOutlineMenuFold} from 'react-icons/ai'
 import { useRef } from 'react'
 import {IoMdClose} from 'react-icons/io'
@@ -30,13 +28,12 @@ const closeMenu = () => {
     <div >
         <div ref={fixed} className='flex justify-between w-screen fixed z-30 pt-6 pb-6 pl-4 pr-4 lg:pr-20 lg:pl-20 items-center bg-white shadow-md'>
             <div>
-                <img src={logo} alt="logo" />
+                {/* <img src={logo} alt="logo" /> */}
+                <h2 className='text-[#7c6a46] font-semibold text-lg'>HOREB-HOTELS</h2>
             </div>
             <div>
                 <ul className='hidden lg:flex gap-14 cursor-pointer  font-semibold'>
                     <li className='hover:text-[#7C6A46] active:text-[#7C6A46]'> <Link to='/'>Home</Link> </li>
-                    {/* <li className='hover:text-[#7C6A46] active:text-[#7C6A46]'><Link to='/explore'>Explore</Link></li> */}
-                    <li className='hover:text-[#7C6A46] active:text-[#7C6A46]'> <Link to='/rooms'>Properties</Link> </li>
                     <li className='hover:text-[#7C6A46] active:text-[#7C6A46]'> <Link to='/about'>About Us</Link></li>
                     <li className='hover:text-[#7C6A46] active:text-[#7C6A46]'><Link to='/contact'>Contact</Link></li>
                 </ul>
@@ -45,7 +42,7 @@ const closeMenu = () => {
             <div>
                 <button className='bg-[#7C6A46] text-white w-[150px] h-[45px] rounded-md hidden lg:block'>Check Out</button>
             </div>
-            <div ref={menu} className='lg:hidden flex'>
+            <div ref={menu} className='lg:hidden flex pr-6 cursor-pointer'>
             <AiOutlineMenuFold  onClick={openMenu} size={30} className='flex  text-[#7C6A46]'/>
             </div>
             <div  ref={close} className='hidden fixed z-50 top-6 right-6'>

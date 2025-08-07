@@ -1,4 +1,3 @@
-import React from 'react'
 import {BsStarFill, BsStarHalf} from 'react-icons/bs'
 import {BiSolidQuoteLeft, BiSolidQuoteRight} from 'react-icons/bi'
 import testimony1 from '../image/testimony1.png'

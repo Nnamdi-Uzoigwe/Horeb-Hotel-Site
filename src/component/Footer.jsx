@@ -1,12 +1,11 @@
-import React from 'react'
 
 function Footer() {
   return (
     <div className='bg-[#7C6A46] flex flex-col '>
       <div className='flex justify-between p-6 items-center lg:items-start text-center lg:text-start lg:p-24 flex-col gap-8 lg:gap-0 lg:flex-row'>
         <div className='text-white  flex flex-col gap-2'>
-          <p className='font-bold'>Paradise View</p>
-          <p className='w-[277px] text-[12px] text-white'> The service at the Hotel Monteleone was exceptional. 
+          <p className='font-bold'>Horeb Hotels</p>
+          <p className='w-[277px] text-[12px] text-white'> The service at the Hotel was exceptional. 
             There was absolutely no issue that was not addressed timely 
             and with satisfactory results. We were particulary impressed 
             with how the hotel staff anticipated our needs (periodically coming by the Board Room to check with us)</p>
@@ -51,7 +50,7 @@ function Footer() {
       </div>
       <hr />
       <div>
-        <p className='font-semibold text-white pb-10 pt-10 text-center'>Paradise view 2023</p>
+        <p className='font-semibold text-white pb-10 pt-10 text-center'>&copy; Horeb Hotels 2025</p>
       </div>
     </div>
   )

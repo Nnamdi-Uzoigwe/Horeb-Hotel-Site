@@ -1,26 +1,18 @@
-import React from 'react'
+
 import gym from '../image/gym.jpg'
 import restaurant from '../image/restaurant.jpg'
-import room from '../image/room.jpg'
-
 
 function Tour() {
 
     const array = [
         {
             id: 1,
-            type: 'Luxirous Rooms',
-            text: 'The elegant luxury bedrooms in this gallery showcase custom interior designs & decorating ideas. View pictures and find your perfect luxury bedroom design.Luxurious bedrooms that will make you never want to leave your room again. See more ideas about luxurious bedrooms, bedroom design',
-            img: room
-        },
-        {
-            id: 2,
             type: 'Gym Center',
             text: 'The elegant luxury bedrooms in this gallery showcase custom interior designs & decorating ideas. View pictures and find your perfect luxury bedroom design.Luxurious bedrooms that will make you never want to leave your room again. See more ideas about luxurious bedrooms, bedroom design',
             img: gym
         },
         {
-            id: 3,
+            id: 2,
             type: 'Restaurant',
             text: 'The elegant luxury bedrooms in this gallery showcase custom interior designs & decorating ideas. View pictures and find your perfect luxury bedroom design.Luxurious bedrooms that will make you never want to leave your room again. See more ideas about luxurious bedrooms, bedroom design',
             img: restaurant

@@ -1,135 +1,137 @@
-import React, { useCallback, useEffect, useState } from 'react'
-import pic from '../image/room2.jpg'
-import Navbar from '../component/Navbar'
-import Footer from '../component/Footer'
-import { Link } from 'react-router-dom'
-import { useParams } from 'react-router-dom'
-import {roomlay1} from '../component/Array'
-import { FaGreaterThan, FaLessThan } from "react-icons/fa6";
-import Testimonial from '../component/Testimonial'
-import { motion } from "framer-motion";
+import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
 
+import { calabarHotels } from '../component/Array';
 
+import { IoLocationOutline, IoCallOutline, IoMailOutline } from 'react-icons/io5';
+import { FaWifi, FaSwimmingPool, FaParking, FaUtensils, FaTv } from 'react-icons/fa';
+
+import Footer from '../component/Footer';
+import Testimonial from '../component/Testimonial';
+import { Link } from 'react-router-dom';
 
 function RoomDetail() {
-    const [count, setCount] = useState(0)
+  const { id } = useParams();
+  const room = calabarHotels.find(room => room.id === parseInt(id));
+  useEffect(() => {
+    console.log('ID from URL:', id);
+    console.log('All rooms:', calabarHotels);
+    console.log('Found room:', calabarHotels.find(r => r.id === parseInt(id)));
+  }, [id]);
 
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
-    const {userId} = useParams();
-    const room1 = roomlay1.find((room) => room.id === parseInt(userId));
-
-    const handleNext = useCallback(() => {
-        requestAnimationFrame(() => {
-            setCount(prev => (prev + 1) % room1.image.length);
-        });
-    }, [room1.image.length]);
-
-    const handlePrev = useCallback(() => {
-        requestAnimationFrame(() => {
-            setCount(prev => (prev - 1 + room1.image.length) % room1.image.length);
-        });
-    }, [room1.image.length]);
-
-
-    
-
-    if (!room1) {
-        return <h2>Property not found</h2>;
-      }
-
-
+  if (!room) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <p className="text-2xl">Room not found</p>
+      </div>
+    );
+  }
   return (
-    <div className='relative overflow-x-hidden'>
-        <Navbar/>
-        {/* <div className=' blur-sm'>
-            <div id='roomhero'>
-
-            </div>
-        </div> */}
-        <div className='py-14 overflow-x-hidden  top-4 bottom-4  h-[45%] lg:h-[60%] md:h-[51%]   '>
-        <div className='w-screen h-fit  flex items-center flex-col py-10'>
-            <div className='flex flex-col bg-white w-[90%] lg:w-[60%] overflow-x-hidden  lg:p-4 shadow-xl'>
-                <div><p className='text-center text-[24px] font-bold'>Luxury {room1.type}</p></div>
-                <hr />
-                <div className='relative '>
-                    <img src={room1.image[count]} alt="" className='w-[100%] lg:h-[450px] transition-all duration-300 ease-in-out py-2'/>
-                {/* <motion.img
-                key={count} // Forces re-render to trigger animation
-                src={room1?.image?.[count]}
-                alt=""
-                className="w-full lg:h-[450px] py-2 "
-                variants={slideVariants}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                custom={direction} // Pass direction to variants
-            /> */}
-                <div className='absolute top-[50%] left-[1vw] shadow-lg bg-white p-4 rounded-full cursor-pointer' onMouseDown={handlePrev}> <FaLessThan/></div>
-                <div className='absolute top-[50%] right-[1vw] shadow-lg bg-white p-4 rounded-full cursor-pointer' onMouseDown={handleNext}> <FaGreaterThan/></div>
-                <button className={` px-6 py-2 text-white text-[14px] bg-[#7C6A46]`}>{room1.for}</button>
-                </div>
-                <hr />
-                <div className='py-4'>
-                    <p className='font-semibold text-gray-400 text-[16px]'>Description</p>
-                    <p className='p-4'>{room1.description}
-                    </p>
-                    {/* <div className='flex items-center justify-center'>
-                       <Link to={'/payment'}>  <button className=' text-[16px] font-semibold text-white w-[250px] rounded-md py-2 bg-[#7C6A46]'>Book Now</button> </Link>
-                    </div> */}
-
-                </div>
-                <div className='py-4'>
-                    <p className='font-semibold text-gray-400 text-[16px]'>Remark</p>
-                    <p className='p-4 text-red-500 italic font-bold'>{room1.note}
-                    </p>
-                    {/* <div className='flex items-center justify-center'>
-                       <Link to={'/payment'}>  <button className=' text-[16px] font-semibold text-white w-[250px] rounded-md py-2 bg-[#7C6A46]'>Book Now</button> </Link>
-                    </div> */}
-
-                </div>
-                <hr />
-                <div>
-                    <p className='text-[#7C6A46] font-bold'>Price</p>
-                    <p className='lg:text-[24px] text-[18px] font-semibold'> {room1.price} </p>
-                </div>
-                <div className='py-4'>
-                    <p className='font-semibold text-gray-400 text-[16px]'>Room Highlights</p>
-                    <ul className='list-disc px-2 py-4 grid grid-cols-2 lg:grid-cols-3 gap-2'>
-                       <li className='flex flex-col  '><span className='font-bold italic '>Bedrooms: </span> <span className='text-[14px] lg:text-[24px]'>{room1.rooms}</span> </li> 
-                       <li className='flex flex-col  '><span className='font-bold italic '>Bathrooms: </span> <span className='text-[14px] lg:text-[24px]'>{room1.bath}</span> </li> 
-                       <li className='flex flex-col  '><span className='font-bold italic '>Interior/Exterior: </span> <span className='text-[14px] lg:text-[24px]'>{room1.interior}</span> </li> 
-                       <li className='flex flex-col '><span className='font-bold italic '>Property Type: </span> <span className='text-[14px] lg:text-[24px]'>{room1.type}</span></li> 
-                       <li className='flex flex-col '><span className='font-bold italic '>Status: </span> <span className='text-[14px] lg:text-[24px]'>{room1.status}</span></li> 
-                       <li className='flex flex-col '><span className='font-bold italic '>Style: </span> <span className='text-[14px] lg:text-[24px]'>{room1.style}</span></li> 
-                       
-                    </ul>
-                </div>
-                <hr />
-                <div className='flex justify-between gap-2 lg:pr-14 py-4'>
-                    <div>
-                    <p className='font-semibold text-gray-400 text-[16px] pb-4'>Comfort Amenities</p>
-                    <ul className=' list-disc px-4'>
-                       <li>Parking Space</li> 
-                       <li>Swimming Pool</li>
-                       <li>Gym</li>
-                       <li>Movie Room</li>
-                       <li>Secured Environment</li>
-                    </ul>
-                    </div>
-                    
-                </div>
-                
-            </div>
+    <div className='relative overflow-x-hidden bg-gray-50'>
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        {/* Room Header */}
+        <div className="mb-8">
+          <h1 className="text-3xl font-bold text-[#7C6A46]">{room.name}</h1>
+          <div className="flex items-center mt-2 text-gray-600">
+            <IoLocationOutline className="mr-1" />
+            <span>{room.location}</span>
+          </div>
         </div>
+
+        {/* Image Gallery */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <div className="md:col-span-2">
+            <img
+              src={room.image}
+              alt={`Main view of ${room.name}`}
+              className="w-full h-96 object-cover rounded-lg"
+            />
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            {[1, 2, 3, 4].map((_, index) => (
+              <img
+                key={index}
+                src={room.image} // Replace with actual gallery images if available
+                alt={`Gallery view ${index + 1}`}
+                className="w-full h-48 object-cover rounded-lg"
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Details Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Left Column - Main Info */}
+          <div className="lg:col-span-2">
+            <div className="bg-white p-6 rounded-lg shadow-md mb-6">
+              <h2 className="text-xl font-semibold mb-4 text-[#7C6A46]">Description</h2>
+              <p className="text-gray-700">{room.description}</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md mb-6">
+              <h2 className="text-xl font-semibold mb-4 text-[#7C6A46]">Amenities</h2>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                {room.amenities.map((amenity, index) => (
+                  <div key={index} className="flex items-center">
+                    {amenity === 'WiFi' && <FaWifi className="mr-2 text-[#7C6A46]" />}
+                    {amenity === 'Pool' && <FaSwimmingPool className="mr-2 text-[#7C6A46]" />}
+                    {amenity === 'Parking' && <FaParking className="mr-2 text-[#7C6A46]" />}
+                    {amenity === 'Restaurant' && <FaUtensils className="mr-2 text-[#7C6A46]" />}
+                    {amenity === 'TV' && <FaTv className="mr-2 text-[#7C6A46]" />}
+                    <span>{amenity}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column - Booking Card */}
+          <div className="lg:col-span-1">
+            <div className="bg-white p-6 rounded-lg shadow-md sticky top-4">
+              <h2 className="text-xl font-semibold mb-4 text-[#7C6A46]">Booking Information</h2>
+              
+              <div className="mb-4">
+                <p className="text-2xl font-bold text-[#7C6A46]">
+                  ₦{room.pricePerNight.toLocaleString()}
+                  <span className="text-sm font-normal text-gray-500"> / night</span>
+                </p>
+                <p className="text-sm text-gray-500 mt-1">{room.type} Room</p>
+              </div>
+
+              <div className="mb-6">
+                <h3 className="font-medium mb-2">Contact Information</h3>
+                {room.contact?.phone && (
+                  <div className="flex items-center mb-2">
+                    <IoCallOutline className="mr-2 text-[#7C6A46]" />
+                    <a href={`tel:${room.contact.phone}`} className="hover:underline">
+                      {room.contact.phone}
+                    </a>
+                  </div>
+                )}
+                {room.contact?.email && (
+                  <div className="flex items-center">
+                    <IoMailOutline className="mr-2 text-[#7C6A46]" />
+                    <a href={`mailto:${room.contact.email}`} className="hover:underline">
+                      {room.contact.email}
+                    </a>
+                  </div>
+                )}
+              </div>
+              <Link to="/payment">
+              <button className="w-full bg-[#7C6A46] hover:bg-[#5a4d34] text-white py-3 rounded-lg font-medium transition-colors">
+                Book Now
+              </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Testimonial />
+      <Footer />
     </div>
-    <Testimonial />
-    <Footer/>
-    </div>
-    
-  )
+  );
 }
 
-export default RoomDetail
+export default RoomDetail;
